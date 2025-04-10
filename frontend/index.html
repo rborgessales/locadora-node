@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Locadora de Filmes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎬 Locadora</h1>
+
+
+  <section>
+    <h2>📋 Filmes</h2>
+    <ul id="filmes-lista"></ul>
+    <input type="text" id="filme-nome" placeholder="Nome do filme">
+    <button onclick="adicionarFilme()">Adicionar Filme</button>
+    <button onclick="carregarFilmes()">Mostrar Filmes</button> <!-- Botão novo -->
+    <button onclick="limparFilmes()">Esconder Filmes</button> <!-- Botão novo -->
+
+  </section>
+
+
+
+
+
+  <hr>
+
+  <section>
+    <h2>👤 Clientes</h2>
+   <!-- Esse "clientes-lista" é um elemento HTML que será preenchido com os clientes cadastrados no banco de dados. 
+    Ele vem do backend, onde o servidor irá retornar uma lista de clientes em formato JSON.
+    Você encontra esse código no arquivo script.js, na função listarClientes().-->
+   <!-- <ul id="clientes-lista"></ul>-->
+    <input type="text" id="cliente-nome" placeholder="Nome do cliente">
+    <button onclick="adicionarCliente()">Adicionar Cliente</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
