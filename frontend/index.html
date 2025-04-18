@@ -16,12 +16,10 @@
     <button onclick="adicionarFilme()">Adicionar Filme</button>
     <button onclick="carregarFilmes()">Mostrar Filmes</button> <!-- Botão novo -->
     <button onclick="limparFilmes()">Esconder Filmes</button> <!-- Botão novo -->
+    <input type="text" id="filme-id-excluir" placeholder="ID do Filme para excluir">
+    <button onclick="excluirFilme()">Excluir Filme</button>
 
   </section>
-
-
-
-
 
   <hr>
 
@@ -30,9 +28,23 @@
    <!-- Esse "clientes-lista" é um elemento HTML que será preenchido com os clientes cadastrados no banco de dados. 
     Ele vem do backend, onde o servidor irá retornar uma lista de clientes em formato JSON.
     Você encontra esse código no arquivo script.js, na função listarClientes().-->
-   <!-- <ul id="clientes-lista"></ul>-->
+    <ul id="clientes-lista"></ul>
     <input type="text" id="cliente-nome" placeholder="Nome do cliente">
     <button onclick="adicionarCliente()">Adicionar Cliente</button>
+    <button onclick="carregarClientes()">Mostrar Clientes</button> <!-- Botão novo -->
+    <button onclick="limparClientes()">Esconder Clientes</button> <!-- Botão novo -->
+    <!-- Esse 'id="cliente-id-excluir"' é o id do elemento HTML onde o usuário irá digitar o ID do cliente que deseja excluir.
+    Esse ID é enviado para o backend, onde o servidor irá processar a solicitação de exclusão do cliente.
+    é o id da caixa de texto onde o usuário irá digitar o ID do cliente que deseja excluir.-->
+    
+    <input type="text" id="cliente-id-excluir" placeholder="ID do Cliente para excluir">
+    <button onclick="excluirCliente()">Excluir Cliente</button>
+    <!--
+    <input type="text" id="cliente-nome" placeholder="id Cliente excluir">
+    <button onclick="excluirClientes()">Excluir Clientes</button> 
+     -->
+
+
   </section>
 
   <script src="script.js"></script>
